@@ -1,0 +1,8 @@
+/* Footer styling */
+.footer-container {
+  border-top: 1px solid rgba(144, 143, 160, 0.12);
+}
+
+.footer-social-link:hover {
+  transform: translateY(-1px);
+}

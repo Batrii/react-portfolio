@@ -1,0 +1,9 @@
+/* Educational screen styling */
+.cert-card {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -8px rgba(0, 0, 0, 0.4);
+}

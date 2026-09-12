@@ -1,0 +1,14 @@
+/* About Screen styling */
+.about-hero-image-wrap {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-dot {
+  box-shadow: 0 0 0 4px var(--color-surface-container);
+}
+
+.skill-bar-fill {
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}

@@ -1,0 +1,20 @@
+/* Hero component styling */
+.hero-gradient-text {
+  background: linear-gradient(135deg, #c0c1ff 0%, #8083ff 50%, #ffb95f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-cta-btn {
+  box-shadow: 0 8px 24px rgba(128, 131, 255, 0.25);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(128, 131, 255, 0.35);
+}
+
+.hero-pill-badge {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}

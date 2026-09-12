@@ -1,0 +1,9 @@
+/* Projects screen styling */
+.project-card-interactive {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card-interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(128, 131, 255, 0.3);
+}

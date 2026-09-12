@@ -1,0 +1,10 @@
+/* Project Modal styling */
+.project-modal-overlay {
+  background-color: rgba(6, 14, 32, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.project-modal-card {
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(144, 143, 160, 0.2);
+}
