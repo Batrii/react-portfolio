@@ -18,7 +18,7 @@ export const engineer: EngineerProfile = {
   title: "Junior Software Engineer",
   status: "Ready for impact",
   stack: [
-    "TypeScript", "React", "Next.js", "Node.js", "Python"
+    "TypeScript", "React", "Node.js", "Python"
   ],
   passions: [
     "Performant UIs", "System Architecture", "Open Source"
@@ -130,7 +130,7 @@ export const engineer: EngineerProfile = {
             </div>
             <div className="pl-4">stack: [</div>
             <div className="pl-8 text-on-surface">
-              "TypeScript", "React", "Next.js", "Node.js", "Python"
+              "TypeScript", "React", "Node.js", "Python"
             </div>
             <div className="pl-4">],</div>
             <div className="pl-4">passions: [</div>
@@ -140,7 +140,7 @@ export const engineer: EngineerProfile = {
             <div className="pl-4">],</div>
             <div className="pl-4">
               currentFocus:{' '}
-              <span className="code-string">"Full-Stack Reliability & Cloud Native"</span>,
+              <span className="code-string">"Full-Stack Reliability & DevOps"</span>,
             </div>
             <div className="pl-4">
               isOpenToOffers: <span className="code-boolean">true</span>,
