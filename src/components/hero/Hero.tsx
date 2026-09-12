@@ -3,6 +3,7 @@ import { PageId } from '../../types';
 import { TerminalCard } from '../terminal/TerminalCard';
 import { ArrowRight, FileText, Terminal, Share2 } from 'lucide-react';
 import './hero.css';
+import { developerProfile } from '@/src/data/portfolioData';
 
 interface HeroProps {
   onNavigate: (page: PageId) => void;
@@ -19,9 +20,10 @@ export const Hero: React.FC<HeroProps> = ({
     { name: 'JavaScript', dotColor: 'bg-secondary' },
     { name: 'TypeScript', dotColor: 'bg-primary' },
     { name: 'React', dotColor: 'bg-primary-container' },
-    { name: 'Next.js', dotColor: 'bg-on-surface' },
+    // { name: 'Next.js', dotColor: 'bg-on-surface' },
     { name: 'Node.js', dotColor: 'bg-secondary-fixed-dim' },
-    { name: 'Python', dotColor: 'bg-tertiary' },
+    // { name: 'Python', dotColor: 'bg-tertiary' },
+    {name : 'Docker', dotColor: 'bg-secondary-container'},
     { name: 'Tailwind CSS', dotColor: 'bg-primary-fixed' },
     { name: 'Git', dotColor: 'bg-secondary' },
   ];
@@ -32,7 +34,7 @@ export const Hero: React.FC<HeroProps> = ({
         {/* Hero Left Content (Cols 1-7) */}
         <div className="lg:col-span-7 flex flex-col items-start gap-4">
           {/* Availability Pill */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high hero-pill-badge">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high hero-pill-badge">
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
@@ -40,7 +42,7 @@ export const Hero: React.FC<HeroProps> = ({
             <span className="font-mono text-[11px] font-semibold text-secondary tracking-wide uppercase">
               Open for Junior Software Engineer Roles &amp; Internships
             </span>
-          </div>
+          </div> */}
 
           {/* Headline */}
           <div className="flex flex-col gap-1">
@@ -79,7 +81,7 @@ export const Hero: React.FC<HeroProps> = ({
 
             <div className="flex items-center gap-2 ml-auto lg:ml-2">
               <a
-                href="https://github.com"
+                href={developerProfile.github}
                 target="_blank"
                 rel="noreferrer"
                 title="GitHub"

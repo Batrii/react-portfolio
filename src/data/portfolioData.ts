@@ -1,13 +1,15 @@
 import { Certification, Degree, DeveloperProfile, ExperienceItem, Project, SkillCategory } from '../types';
-
+import bnafiai from '../images/bnafiai.jpg';
+import edu from '../images/edu.jpeg';
+import pic_42 from '../images/pic_42.jpg';
 export const developerProfile: DeveloperProfile = {
   name: 'Badr Eddine Nafiai',
   title: 'Junior Software Engineer',
   status: 'Ready for impact',
-  location: 'Paris, France & Remote',
-  email: 'badr@engineer.dev',
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  location: 'El Jadida, Morocco',
+  email: 'nafiaibadr002@gmail.com',
+  github: 'https://github.com/Batrii',
+  linkedin: 'https://www.linkedin.com/in/badr-eddine-nafiai-9a1b00290',
   bio: 'Junior Software Engineer focused on crafting resilient web architectures, elegant code craftsmanship, and modern user experiences.',
   mission: 'Crafting responsive, reliable, and modern web applications with clean code, modern frontend frameworks, and robust backends. Dedicated to scalable engineering and elegant user journeys.',
   stack: ['TypeScript', 'React', 'Next.js', 'Node.js', 'Python', 'Tailwind CSS', 'PostgreSQL', 'Docker'],
@@ -18,32 +20,48 @@ export const developerProfile: DeveloperProfile = {
 
 export const images = {
   monogram: 'https://lh3.googleusercontent.com/aida/AEtjO1W8v6mROqQoKdwZZI2pW7FYZ5u2pmYk3IbKCoLw2W72UkxCNLg0uV9f6T_B_B1vCE719pi3EBmEQF5G-LwJIsJzhOzTqnTTeDl11jII5ObV1c-WACXI8lAUNeTIU-HLWXqR88HRzVNX-vjWoEwi7lJDQoXOTZ8zAEBx-SZLrbaRT57e3khhfD4TChF3vnagsuDg3zS2HS7NVe1AxLtvLm1Ynt9SFAYIpspMK-FJRWegg3-lQqzQ5tUxAcuu',
-  avatar: 'https://lh3.googleusercontent.com/aida/AEtjO1VK-e_Xr1iZxa3pHBAdQwDQuq5Y7yycmioUFdgHG8x0aIMoqp4Fn7McJLedNVIyc_UZsNcMxkqOl6cjUOPkHM4_KokIFThLHeT0eTHACagpbtvqky5R-9AO43duigI5pDfj25whJ8-NBWIUq4adU8Go_eZkvgYUKDMVtwjDlDnHyKp9M3oYRZ1VzT5gMnB2S9V_UcFQxke9a1oXLVngw-4toyQqrnOrslghyNeWNiYGiFm26zTTGDVKwYPA',
+  avatar: bnafiai,
   bioCard: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9TWrWAAyi5q1EN61-r_d0K62PYZM-xSs7jHbbCYwRNs60NFzC96GmcdfoRX6tC-jtkguwnmD48SPyXXmUC3hASLY5Pa8lV4tnVnMsSXpAJOh00Xq_vOVuCYU23IMox2JZ6AodClo-pr1OXtK4T-kWt8F-3v6D6ebrBPNZ34nCC1HKY1fBe4xKFayw7WR4i1Tc3EBqEp5S00SNx-8ziSxZVb--oLS8Y7WAu1kqfRVMedNJ41i4Gl4VIQ',
   projectsCard: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAitsO7z3Mfz_L7sCj7txkoV1HI2eI9YhEuCGlGj7NGV_gtRIItrwPpzzXjxTPnSBPQnabGzhH61Ml2tUzsDS42GfkUhGsWcPL3nRuecTAA55Z6ZguMoIaC0SkQ-ezUkrAsQXnMPzxWNagCZNciYnEn05QJF-Vchin0As6vS8Xn77WLfHvTiHEjG9AbMNVYhYEy9VnsbbTunI5GxqQ2-57jRvW80OVA9y1vfvYyJn3jeoW8PVcqewCetQ',
-  educationalCard: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDcuVjsrkufvP8zF5LxtlEWKd3WWrKLeorpio8WrWv_I4LSsiBQWvJJr9HnJJnMrkrP0tm0PIwohptQuLxUO0pKHvaguzfueAKicAOEbMDkv6ltF0hEIFNR2pr8UAkxHQKrOdc3DvWO3DaEHP5KHhafJIEVf2xiMkuVESOXfOqCbXieOQhbsKJ7OyNYoZ1ssf1-kKc92KN33k1-Cvk-erIinJroZ6XexWh9YlDYBwaEv5NGfVDHl06KFQ',
+  educationalCard: edu,
+  pic_42: pic_42,
 };
 
 export const projectsData: Project[] = [
   {
-    id: 'nexus-cloud-dashboard',
-    title: 'Nexus Cloud Analytics',
-    category: 'Full-Stack',
-    featured: true,
-    shortDescription: 'Real-time telemetry and microservices health monitoring platform with sub-second stream ingestion.',
-    fullDescription: 'Nexus is an enterprise-grade cloud observability console built with Next.js 14, Node.js, and Redis streams. Features instant event telemetry, interactive anomaly detection visualizations, customizable incident dashboards, and granular team permission policies.',
-    image: images.projectsCard,
-    technologies: ['TypeScript', 'Next.js 14', 'Tailwind CSS', 'Node.js', 'Redis', 'PostgreSQL', 'Docker'],
-    features: [
-      'Sub-50ms real-time metric updates via WebSockets',
-      'Interactive time-series charts with dynamic filtering',
-      'Configurable alert policies with webhook dispatchers',
-      'Role-based access control (RBAC) with OAuth2'
-    ],
-    architecture: 'Microservices event pipeline with worker queues, decoupled Next.js Edge frontend, and connection-pooled PostgreSQL.',
-    demoUrl: 'https://example.com/demo/nexus',
-    githubUrl: 'https://github.com',
-    stars: 48,
+   id: 'ft-transcendence',
+  title: 'ft_transcendence',
+  category: 'Full-Stack',
+  featured: true,
+  shortDescription:
+    'Real-time multiplayer coding challenge platform with authentication, REST APIs, battles, and WebSocket communication.',
+  fullDescription:
+    'A multiplayer coding challenge platform developed as a team project. I worked mainly on the backend, designing the database schema and REST APIs, integrating Better Auth authentication, implementing real-time multiplayer features with Socket.IO, and working with PostgreSQL and Prisma.',
+  image: images.pic_42,
+  technologies: [
+    'TypeScript',
+    'NestJS',
+    'Node.js',
+    'PostgreSQL',
+    'Prisma',
+    'Better Auth',
+    'Socket.IO',
+    'Redis',
+    'Docker'
+  ],
+  features: [
+    'Email/password authentication and OAuth integration',
+    'REST APIs for users, challenges, and battles',
+    'Real-time multiplayer communication with WebSockets',
+    'Battle management with SOLO, DUO, and GROUP modes',
+    'PostgreSQL database design with Prisma ORM',
+    'Redis integration for caching and real-time data'
+  ],
+  architecture:
+    'Modular NestJS backend organized into controllers, services, modules, DTOs, database access, authentication, and WebSocket gateways.',
+  demoUrl: '',
+  githubUrl: '',
+  stars: 50,
   },
   {
     id: 'fluid-canvas-engine',
@@ -65,68 +83,144 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com',
     stars: 32,
   },
-  {
-    id: 'sentinel-api-gateway',
-    title: 'Sentinel API Gateway & Proxy',
-    category: 'Systems & APIs',
+ {
+    id: 'webserv',
+    title: 'Webserver',
+    category: 'Systems / C++',
     featured: true,
-    shortDescription: 'High-throughput reverse proxy with dynamic token-bucket rate limiting and latency caching.',
-    fullDescription: 'A lightweight, robust API Gateway built in Node.js & TypeScript. Provides distributed rate-limiting using Redis token buckets, JWT validation, automated SSL termination, and real-time request logging to Prometheus.',
-    image: images.educationalCard,
-    technologies: ['TypeScript', 'Node.js', 'Express', 'Redis', 'Prometheus', 'Docker'],
-    features: [
-      'Sliding window & token-bucket rate limiting strategies',
-      'Low-overhead JWT authentication and claims verification',
-      'Distributed caching layer with automatic invalidation',
-      'Prometheus and OpenTelemetry metrics endpoints'
+    shortDescription:
+      'HTTP web server implemented from scratch in C++ with socket programming and I/O multiplexing.',
+    fullDescription:
+      'A team project focused on understanding how web servers work internally. I implemented socket creation and communication and worked on epoll-based I/O multiplexing to handle multiple client connections efficiently.',
+    image: images.pic_42,
+    technologies: [
+      'C++',
+      'Linux',
+      'Sockets',
+      'epoll',
+      'I/O Multiplexing',
+      'HTTP',
+      'Git'
     ],
-    architecture: 'Event-driven non-blocking I/O proxy with cluster worker distribution and zero-copy response piping.',
-    demoUrl: 'https://example.com/demo/sentinel',
-    githubUrl: 'https://github.com',
-    stars: 29,
+    features: [
+      'TCP socket communication',
+      'Non-blocking I/O',
+      'Multiple simultaneous client connections',
+      'epoll-based I/O multiplexing',
+      'HTTP request and response handling'
+    ],
+    architecture:
+      'Event-driven server architecture using Linux sockets and epoll to monitor multiple connections without creating one blocking process per client.',
+    demoUrl: '',
+    githubUrl: '',
+    stars: 30,
   },
   {
-    id: 'algo-visualizer',
-    title: 'Graph & Pathfinding Visualizer',
-    category: 'Frontend',
-    featured: false,
-    shortDescription: 'Interactive educational suite visualizing graph traversal, sorting algorithms, and memory trees.',
-    fullDescription: 'Comprehensive educational web application allowing students and engineers to step through Dijkstra, A*, QuickSort, and Red-Black Trees with adjustable execution speeds and call-stack introspection.',
-    image: images.projectsCard,
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Web Audio API'],
-    features: [
-      'Custom maze generator and dynamic heuristic weights',
-      'Step-by-step debug playback with breakpoint support',
-      'Harmonic acoustic feedback tuned to element comparisons'
+    id: 'inception',
+    title: 'Inception',
+    category: 'DevOps / Infrastructure',
+    featured: true,
+    shortDescription:
+      'Containerized web infrastructure built with Docker Compose, Nginx, WordPress, and MariaDB.',
+    fullDescription:
+      'A system administration project focused on containerization and infrastructure fundamentals. I designed and deployed an isolated Docker environment containing Nginx, WordPress, and MariaDB, with persistent volumes and HTTPS configuration.',
+    image: images.pic_42,
+    technologies: [
+      'Docker',
+      'Docker Compose',
+      'Nginx',
+      'MariaDB',
+      'WordPress',
+      'Linux',
+      'Bash',
+      'TLS/SSL'
     ],
-    architecture: 'Generator-based step execution decoupled from the React rendering loop for smooth time-travel animations.',
-    demoUrl: 'https://example.com/demo/algo-vis',
-    githubUrl: 'https://github.com',
-    stars: 19,
-  }
+    features: [
+      'Multi-container infrastructure with Docker Compose',
+      'Nginx reverse proxy with HTTPS',
+      'MariaDB database container',
+      'WordPress with PHP-FPM',
+      'Persistent Docker volumes',
+      'Isolated Docker network'
+    ],
+    architecture:
+      'Multi-container architecture where Nginx handles HTTPS and forwards requests to WordPress/PHP-FPM, while WordPress communicates with MariaDB through an isolated Docker network.',
+    demoUrl: '',
+    githubUrl: '',
+    stars: 15,
+  },
 ];
 
 export const degreesData: Degree[] = [
   {
-    id: 'bachelor-cs',
-    degree: 'Bachelor of Science in Computer Science',
-    field: 'Software Engineering & Distributed Systems',
-    institution: 'University School of Computer Science & Engineering',
-    location: 'Paris, France',
-    period: '2021 — 2024',
-    honors: 'Summa Cum Laude / Highest Honors',
-    gpa: '3.9 / 4.0',
+    id: '1337',
+    degree: 'Software Engineering / Computer Programming',
+    field: 'Programming, Algorithms & Systems Architecture',
+    institution: '1337 (42 Network School)',
+    location: 'UM6P, Benguerir, Morocco',
+    period: '2024 — 2026 (Ongoing)',
+    honors: '',
+    gpa: '',
     keyCourses: [
-      'Data Structures & Algorithms',
-      'Object-Oriented Design & Design Patterns',
-      'Operating Systems & Concurrency',
-      'Database Systems & Query Optimization',
-      'Computer Networks & Distributed Protocols',
-      'Software Architecture & Agile Methodologies'
+      'C / C++ Programming',
+      'Algorithms & Problem Solving',
+      'Systems Programming',
+      'Systems Architecture',
+      'Peer Programming',
+      'Project-Based Software Development'
     ],
-    description: 'Focused rigorously on computer science fundamentals, theoretical computation, clean systems design, and end-to-end full-stack development methodologies. Led peer coding workshops and capstone projects.'
+    description:
+      'Intensive project-based programming curriculum focused on peer learning, C/C++, algorithms, and systems architecture.'
+  },
+  {
+    id: 'professional-bachelor',
+    degree: 'Professional Bachelor’s Degree',
+    field: 'Computer Engineering & Emerging Technologies',
+    institution: 'ENSA El Jadida — Chouaib Doukkali University',
+    location: 'El Jadida, Morocco',
+    period: '2023 — 2024',
+    honors: '',
+    gpa: '',
+    keyCourses: [
+      'Computer Engineering',
+      'Emerging Technologies',
+      'Software Development'
+    ],
+    description:
+      'Professional bachelor’s degree in Computer Engineering and Emerging Technologies.'
+  },
+  {
+    id: 'specialized-technician',
+    degree: 'Specialized Technician in Digital Development',
+    field: 'Digital Development',
+    institution: 'ISTA Cité de l’Air',
+    location: 'El Jadida, Morocco',
+    period: '2021 — 2023',
+    honors: '',
+    gpa: '',
+    keyCourses: [
+      'Digital Development',
+      'Programming',
+      'Software Development'
+    ],
+    description:
+      'Specialized technical training in digital development.'
+  },
+  {
+    id: 'baccalaureate',
+    degree: 'Baccalaureate in Physical Sciences',
+    field: 'Physical Sciences',
+    institution: '',
+    location: 'Morocco',
+    period: '2019 — 2020',
+    honors: '',
+    gpa: '',
+    keyCourses: [],
+    description:
+      'Baccalaureate in Physical Sciences.'
   }
 ];
+
 
 export const certificationsData: Certification[] = [
   {
@@ -173,34 +267,54 @@ export const certificationsData: Certification[] = [
 
 export const experienceData: ExperienceItem[] = [
   {
-    id: 'exp-intern',
-    role: 'Software Engineering Intern',
-    company: 'TechFlow Solutions',
-    location: 'Paris, France',
-    period: 'March 2024 — August 2024',
-    type: 'Full-time Internship',
-    highlights: [
-      'Engineered and shipped responsive client portal modules with React 18 and TypeScript, reducing user task completion time by 28%.',
-      'Refactored legacy REST endpoints in Node.js/Express, introducing schema validation (Zod) and automated Jest unit tests with 85%+ coverage.',
-      'Implemented Redis caching for high-frequency database lookups, cutting 95th percentile latency from 320ms to 45ms.',
-      'Collaborated in an agile scrum team participating in daily standups, bi-weekly sprint demos, and code reviews.'
-    ],
-    stack: ['TypeScript', 'React', 'Node.js', 'Express', 'Redis', 'Jest', 'Tailwind CSS']
-  },
-  {
-    id: 'exp-freelance',
-    role: 'Junior Full-Stack Web Developer',
-    company: 'Freelance & Open Source Contributor',
-    location: 'Remote',
-    period: '2023 — Present',
-    type: 'Independent Projects',
-    highlights: [
-      'Delivered bespoke web applications for 5+ small business clients with seamless responsive layouts and 98+ Google Lighthouse scores.',
-      'Authored reusable open-source React components and custom hooks with 1,200+ monthly npm downloads.',
-      'Set up automated GitHub Actions CI/CD pipelines for linting, testing, and continuous cloud deployment to Vercel and AWS.'
-    ],
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'GitHub Actions']
-  }
+  id: 'exp-1337',
+  role: 'Software Engineering Student',
+  company: '1337 — 42 Network',
+  location: 'Benguerir, Morocco',
+  period: '2024 — Present',
+  type: 'Project-Based / Peer Learning',
+  highlights: [
+    'Developed systems and web applications through project-based learning, working extensively with C, C++, Linux, Git, and Unix system programming.',
+    'Built a C++ HTTP web server using sockets and epoll-based I/O multiplexing to handle multiple client connections.',
+    'Developed a containerized infrastructure with Docker Compose, Nginx, MariaDB, and WordPress, including HTTPS, persistent storage, and isolated networks.',
+    'Currently developing a multiplayer coding challenge platform with NestJS, TypeScript, PostgreSQL, Prisma, WebSockets, authentication, and Redis.'
+  ],
+  stack: [
+    'C',
+    'C++',
+    'Linux',
+    'Git',
+    'Docker',
+    'Nginx',
+    'TypeScript',
+    'NestJS',
+    'PostgreSQL',
+    'Prisma',
+    'WebSockets',
+    'Redis'
+  ]
+},
+{
+  id: 'exp-ensa',
+  role: 'Computer Engineering Student',
+  company: 'ENSA El Jadida',
+  location: 'El Jadida, Morocco',
+  period: '2023 — 2024',
+  type: 'Academic Projects',
+  highlights: [
+    'Studied computer engineering with a focus on software development, programming, databases, and emerging technologies.',
+    'Developed academic projects involving programming, databases, software engineering, and problem solving.',
+    'Strengthened practical programming skills through hands-on development and collaborative project work.'
+  ],
+  stack: [
+    'C',
+    'C++',
+    'SQL',
+    'Git',
+    'Linux',
+    'Software Engineering'
+  ]
+}
 ];
 
 export const skillCategories: SkillCategory[] = [

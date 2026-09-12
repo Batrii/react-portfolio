@@ -3,7 +3,7 @@ export type PageId = 'home' | 'about-me' | 'projects' | 'educational' | 'contact
 export interface Project {
   id: string;
   title: string;
-  category: 'Full-Stack' | 'Frontend' | 'Systems & APIs' | 'Open Source';
+  category: string;
   shortDescription: string;
   fullDescription: string;
   image: string;

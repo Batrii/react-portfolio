@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, ExternalLink } from 'lucide-react';
 import './recruiter.css';
+import { developerProfile } from '@/src/data/portfolioData';
 
 interface RecruiterBannerProps {
   onOpenContact: () => void;
@@ -41,7 +42,7 @@ export const RecruiterBanner: React.FC<RecruiterBannerProps> = ({ onOpenContact 
             </button>
 
             <a
-              href="https://linkedin.com"
+              href={developerProfile.linkedin}
               target="_blank"
               rel="noreferrer"
               className="inline-flex justify-center items-center gap-2 px-5 py-3.5 rounded-xl bg-surface-container-highest text-on-surface font-headline text-[15px] hover:bg-surface-bright transition-all duration-200 shadow-sm hover:-translate-y-0.5"

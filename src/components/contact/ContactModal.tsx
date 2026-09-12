@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { developerProfile } from '../../data/portfolioData';
 import { X, Mail, Send, Copy, Check, Terminal, Share2, CheckCircle2 } from 'lucide-react';
 import './contact.css';
+import emailjs from '@emailjs/browser';
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -26,9 +27,20 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    await emailjs.send('service_r9nmmv9', 'template_om12lb6', {
+      name: formData.name,
+      email: formData.email,
+      opportunityType: formData.opportunityType,
+      message: formData.message,
+    }, 'w1H50ItfxLazhofja')
+      .then(() => {
+        setIsSubmitted(true);
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+      });
   };
 
   const handleReset = () => {
@@ -60,9 +72,6 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
               <h2 className="font-headline text-xl font-bold text-on-surface">
                 Get in Touch with Badr
               </h2>
-              <p className="font-mono text-xs text-secondary">
-                ● Open for roles &amp; technical interviews
-              </p>
             </div>
           </div>
 

@@ -57,7 +57,7 @@ ${certificationsData.map((c) => `${c.name} - ${c.issuer} (${c.issueDate})`).join
               Curriculum Vitae • Badr Eddine Nafiai
             </span>
             <span className="font-mono text-[11px] px-2 py-0.5 rounded bg-surface-container text-secondary">
-              Updated 2024
+              Updated 2026
             </span>
           </div>
 
@@ -103,14 +103,14 @@ ${certificationsData.map((c) => `${c.name} - ${c.issuer} (${c.issueDate})`).join
                   Junior Software Engineer
                 </p>
                 <p className="font-body text-sm text-slate-500 mt-1">
-                  Paris, France • Open to on-site, hybrid, or remote positions
+                  {developerProfile.location} • Open to on-site, hybrid, or remote positions
                 </p>
               </div>
 
               <div className="text-right sm:border-l sm:border-slate-200 sm:pl-6 text-sm text-slate-600 font-mono space-y-1">
                 <div>{developerProfile.email}</div>
-                <div>github.com/badr-nafiai</div>
-                <div>linkedin.com/in/badr-nafiai</div>
+                <div>{developerProfile.github}</div>
+                <div>{developerProfile.linkedin}</div>
               </div>
             </div>
 

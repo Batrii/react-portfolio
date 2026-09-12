@@ -16,7 +16,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onOpenResume, onOpenCo
         <div className="lg:col-span-4 flex justify-center">
           <div className="relative w-full max-w-sm about-hero-image-wrap group">
             <img
-              src={images.bioCard}
+              src={images.avatar}
               alt="Badr Eddine Nafiai at work"
               className="w-full h-[380px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -188,53 +188,6 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onOpenResume, onOpenCo
                     </span>
                   ))}
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 4. Skills Depth Matrix */}
-      <section className="flex flex-col gap-6">
-        <div className="flex flex-col gap-1">
-          <span className="font-mono text-[11px] text-secondary uppercase tracking-wider">
-            Technical Competencies
-          </span>
-          <h2 className="font-headline text-2xl sm:text-3xl font-semibold text-on-surface">
-            Skills &amp; Mastery Levels
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {skillCategories.map((category) => (
-            <div
-              key={category.category}
-              className="bg-surface-container p-6 rounded-xl border border-outline-variant/15 flex flex-col gap-4"
-            >
-              <h3 className="font-headline text-[17px] font-semibold text-on-surface flex items-center justify-between">
-                <span>{category.category}</span>
-                <span className="font-mono text-[11px] text-outline">Production Ready</span>
-              </h3>
-
-              <div className="space-y-3">
-                {category.skills.map((skill) => (
-                  <div key={skill.name} className="flex flex-col gap-1">
-                    <div className="flex items-center justify-between text-[13px] font-mono">
-                      <span className={`font-medium ${skill.highlight ? 'text-on-surface' : 'text-on-surface-variant'}`}>
-                        {skill.name}
-                      </span>
-                      <span className="text-outline">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
-                      <div
-                        className={`h-full rounded-full skill-bar-fill ${
-                          skill.highlight ? 'bg-primary-container' : 'bg-tertiary/70'
-                        }`}
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           ))}
