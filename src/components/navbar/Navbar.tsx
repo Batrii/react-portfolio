@@ -89,20 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Right Actions: Available for Hire, Theme Toggle, Contact CTA, Avatar */}
         <div className="flex items-center gap-3 md:gap-4">
           {/* Available for hire pill */}
-          <button
-            type="button"
-            onClick={onOpenContact}
-            className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer border border-transparent hover:border-secondary/30"
-            title="Click to hire or send a message"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
-            </span>
-            <span className="font-mono text-[11px] font-medium text-secondary">
-              Available for hire
-            </span>
-          </button>
+          
 
           {/* Theme Toggle Button */}
           <button

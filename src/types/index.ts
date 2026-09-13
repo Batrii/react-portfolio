@@ -60,6 +60,7 @@ export interface DeveloperProfile {
   name: string;
   title: string;
   status: string;
+  phone: string;
   location: string;
   email: string;
   github: string;

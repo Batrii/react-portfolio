@@ -1,13 +1,12 @@
 import { Certification, Degree, DeveloperProfile, ExperienceItem, Project, SkillCategory } from '../types';
-import bnafiai from '../images/bnafiai.jpg';
-import edu from '../images/edu.jpeg';
-import pic_42 from '../images/pic_42.jpg';
+
 export const developerProfile: DeveloperProfile = {
   name: 'Badr Eddine Nafiai',
   title: 'Junior Software Engineer',
   status: 'Ready for impact',
   location: 'El Jadida, Morocco',
   email: 'nafiaibadr002@gmail.com',
+  phone: '+212 6-56-51-16-91',
   github: 'https://github.com/Batrii',
   linkedin: 'https://www.linkedin.com/in/badr-eddine-nafiai-9a1b00290',
   bio: 'Junior Software Engineer focused on crafting resilient web architectures, elegant code craftsmanship, and modern user experiences.',
@@ -19,12 +18,12 @@ export const developerProfile: DeveloperProfile = {
 };
 
 export const images = {
-  monogram: 'https://lh3.googleusercontent.com/aida/AEtjO1W8v6mROqQoKdwZZI2pW7FYZ5u2pmYk3IbKCoLw2W72UkxCNLg0uV9f6T_B_B1vCE719pi3EBmEQF5G-LwJIsJzhOzTqnTTeDl11jII5ObV1c-WACXI8lAUNeTIU-HLWXqR88HRzVNX-vjWoEwi7lJDQoXOTZ8zAEBx-SZLrbaRT57e3khhfD4TChF3vnagsuDg3zS2HS7NVe1AxLtvLm1Ynt9SFAYIpspMK-FJRWegg3-lQqzQ5tUxAcuu',
-  avatar: bnafiai,
+  avatar: './src/images/bnafiai.jpg',
   bioCard: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9TWrWAAyi5q1EN61-r_d0K62PYZM-xSs7jHbbCYwRNs60NFzC96GmcdfoRX6tC-jtkguwnmD48SPyXXmUC3hASLY5Pa8lV4tnVnMsSXpAJOh00Xq_vOVuCYU23IMox2JZ6AodClo-pr1OXtK4T-kWt8F-3v6D6ebrBPNZ34nCC1HKY1fBe4xKFayw7WR4i1Tc3EBqEp5S00SNx-8ziSxZVb--oLS8Y7WAu1kqfRVMedNJ41i4Gl4VIQ',
   projectsCard: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAitsO7z3Mfz_L7sCj7txkoV1HI2eI9YhEuCGlGj7NGV_gtRIItrwPpzzXjxTPnSBPQnabGzhH61Ml2tUzsDS42GfkUhGsWcPL3nRuecTAA55Z6ZguMoIaC0SkQ-ezUkrAsQXnMPzxWNagCZNciYnEn05QJF-Vchin0As6vS8Xn77WLfHvTiHEjG9AbMNVYhYEy9VnsbbTunI5GxqQ2-57jRvW80OVA9y1vfvYyJn3jeoW8PVcqewCetQ',
-  educationalCard: edu,
-  pic_42: pic_42,
+  educationalCard: './src/images/edu.jpeg',
+  pic_42: './src/images/pic_42.jpg',
+  monogram: './src/images/screen.png',
 };
 
 export const projectsData: Project[] = [

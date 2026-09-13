@@ -1,6 +1,6 @@
 import React from 'react';
 import { developerProfile, experienceData, images, skillCategories } from '../../../data/portfolioData';
-import { FileText, Mail, MapPin, Briefcase, Calendar, CheckCircle2, ArrowUpRight, Award, Sparkles } from 'lucide-react';
+import { FileText, Mail, MapPin, Briefcase, Calendar, CheckCircle2, ArrowUpRight, Award, Sparkles, Motorbike, MonitorCloud } from 'lucide-react';
 import './about.css';
 
 interface AboutScreenProps {
@@ -30,7 +30,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({ onOpenResume, onOpenCo
                   {developerProfile.status}
                 </p>
               </div>
-              <span className="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+              <MonitorCloud className="w-4 h-4 text-secondary" />
             </div>
           </div>
         </div>
