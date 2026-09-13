@@ -3,6 +3,7 @@ import { developerProfile, degreesData, experienceData, certificationsData } fro
 import { X, Download, Printer, CheckCircle2 } from 'lucide-react';
 import './resume.css';
 import html2pdf from 'html2pdf.js';
+import resume from './resume.pdf';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -13,7 +14,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
   if (!isOpen) return null;
 
   const handlePrint = () => {
-    window.print();
+    window.open(resume, '_blank')?.print();
   };
 
 //   const handleDownload = () => {
@@ -123,7 +124,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         Executive Profile
       </h2>
       <p className="text-sm text-slate-700 leading-relaxed">
-        Software engineering student at 1337 (42 Network, UM6P), with hands-on experience in C/C++ systems programming, backend development, and Docker-based infrastructure through team projects. Ready to contribute to a technical team and keep building on skills from a project-based, peer-learning curriculum[cite: 1].
+        Software engineering student at 1337 (42 Network, UM6P), with hands-on experience in C/C++ systems programming, backend development, and Docker-based infrastructure through team projects. Ready to contribute to a technical team and keep building on skills from a project-based, peer-learning curriculum.
       </p>
     </div>
 
@@ -142,7 +143,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <span>UM6P, Benguerir — Intensive project-based programming curriculum</span>
           </div>
           <p className="text-xs text-slate-600 mt-1">
-            Peer-learning, C/C++, algorithms, systems architecture[cite: 1].
+            Peer-learning, C/C++, algorithms, systems architecture.
           </p>
         </div>
 
@@ -177,33 +178,33 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         <div className="space-y-1.5">
           <div className="flex justify-between items-baseline">
             <span className="font-bold text-slate-900">Webserver (C++)</span>
-            <span className="text-xs font-mono text-slate-500">42/1337 Project (Team of 2)[cite: 1]</span>
+            <span className="text-xs font-mono text-slate-500">42/1337 Project (Team of 2)</span>
           </div>
           <ul className="list-disc list-inside text-xs text-slate-700 space-y-1">
-            <li>Built an HTTP server in C++ with a teammate (who handled configuration file parsing)[cite: 1].</li>
-            <li>Implemented socket setup and I/O multiplexing to support multiple concurrent client connections without blocking[cite: 1].</li>
+            <li>Built an HTTP server in C++ with a teammate (who handled configuration file parsing).</li>
+            <li>Implemented socket setup and I/O multiplexing to support multiple concurrent client connections without blocking.</li>
           </ul>
         </div>
 
         <div className="space-y-1.5">
           <div className="flex justify-between items-baseline">
             <span className="font-bold text-slate-900">Inception</span>
-            <span className="text-xs font-mono text-slate-500">42/1337 Project (Solo)[cite: 1]</span>
+            <span className="text-xs font-mono text-slate-500">42/1337 Project (Solo)</span>
           </div>
           <ul className="list-disc list-inside text-xs text-slate-700 space-y-1">
-            <li>Designed a containerized infrastructure using Docker and Docker Compose[cite: 1].</li>
-            <li>Configured Nginx, MariaDB, and WordPress services communicating over an isolated Docker network[cite: 1].</li>
+            <li>Designed a containerized infrastructure using Docker and Docker Compose.</li>
+            <li>Configured Nginx, MariaDB, and WordPress services communicating over an isolated Docker network.</li>
           </ul>
         </div>
 
         <div className="space-y-1.5">
           <div className="flex justify-between items-baseline">
             <span className="font-bold text-slate-900">ft_transcendence</span>
-            <span className="text-xs font-mono text-slate-500">42/1337 Project (Team of 4)[cite: 1]</span>
+            <span className="text-xs font-mono text-slate-500">42/1337 Project (Team of 4)</span>
           </div>
           <ul className="list-disc list-inside text-xs text-slate-700 space-y-1">
-            <li>Worked as one of two backend developers on a real-time coding challenge platform[cite: 1].</li>
-            <li>Developed authentication, REST APIs, WebSockets, Redis caching, and database schema design using Nest.JS[cite: 1].</li>
+            <li>Worked as one of two backend developers on a real-time coding challenge platform.</li>
+            <li>Developed authentication, REST APIs, WebSockets, Redis caching, and database schema design using Nest.JS.</li>
           </ul>
         </div>
       </div>
@@ -215,11 +216,11 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         Technical Toolkit
       </h2>
       <div className="text-xs text-slate-700 space-y-1">
-        <div><strong>Languages:</strong> C, C++, JavaScript/TypeScript, SQL, Python[cite: 1]</div>
-        <div><strong>Backend & Frameworks:</strong> Node.js, Nest.JS, WebSockets, REST APIs, React.js[cite: 1]</div>
-        <div><strong>Databases:</strong> MySQL, PostgreSQL, Redis[cite: 1]</div>
-        <div><strong>Systems & Infrastructure:</strong> UNIX/Linux, Sockets, I/O multiplexing, Bash, Docker, Docker Compose, Git/GitHub[cite: 1]</div>
-        <div><strong>Practices:</strong> Peer programming, algorithmic problem-solving, project-based learning[cite: 1]</div>
+        <div><strong>Languages:</strong> C, C++, JavaScript/TypeScript, SQL, Python</div>
+        <div><strong>Backend & Frameworks:</strong> Node.js, Nest.JS, WebSockets, REST APIs, React.js</div>
+        <div><strong>Databases:</strong> MySQL, PostgreSQL, Redis</div>
+        <div><strong>Systems & Infrastructure:</strong> UNIX/Linux, Sockets, I/O multiplexing, Bash, Docker, Docker Compose, Git/GitHub</div>
+        <div><strong>Practices:</strong> Peer programming, algorithmic problem-solving, project-based learning</div>
       </div>
     </div>
   </div>
