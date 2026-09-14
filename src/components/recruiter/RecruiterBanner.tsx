@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, ExternalLink } from 'lucide-react';
 import './recruiter.css';
-import { developerProfile } from '@/src/data/portfolioData';
+import { developerProfile } from '@/data/portfolioData';
 
 interface RecruiterBannerProps {
   onOpenContact: () => void;

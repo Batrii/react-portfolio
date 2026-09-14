@@ -3,7 +3,7 @@ import { PageId } from '../../types';
 import { TerminalCard } from '../terminal/TerminalCard';
 import { ArrowRight, FileText, Terminal, Share2 } from 'lucide-react';
 import './hero.css';
-import { developerProfile } from '@/src/data/portfolioData';
+import { developerProfile } from '@/data/portfolioData';
 
 interface HeroProps {
   onNavigate: (page: PageId) => void;
