@@ -3,7 +3,7 @@ import { developerProfile, degreesData, experienceData, certificationsData } fro
 import { X, Download, Printer, CheckCircle2 } from 'lucide-react';
 import './resume.css';
 import html2pdf from 'html2pdf.js';
-import resume from './resume.pdf';
+// import resume from './resume.pdf';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -14,7 +14,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
   if (!isOpen) return null;
 
   const handlePrint = () => {
-    window.open(resume, '_blank')?.print();
+    window.open('./src/components/resume/resume.pdf', '_blank')?.print();
   };
 
 //   const handleDownload = () => {
