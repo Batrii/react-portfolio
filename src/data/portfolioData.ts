@@ -1,4 +1,8 @@
 import { Certification, Degree, DeveloperProfile, ExperienceItem, Project, SkillCategory } from '../types';
+import bnafiaiAvatar from '@/images/bnafiai.jpg';
+import eduCard from '@/images/edu.jpeg';
+import pic42 from '@/images/pic_42.jpg';
+import screenMonogram from '@/images/screen.png';
 
 export const developerProfile: DeveloperProfile = {
   name: 'Badr Eddine Nafiai',
@@ -18,12 +22,12 @@ export const developerProfile: DeveloperProfile = {
 };
 
 export const images = {
-  avatar: './src/images/bnafiai.jpg',
+  avatar: bnafiaiAvatar,
   bioCard: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9TWrWAAyi5q1EN61-r_d0K62PYZM-xSs7jHbbCYwRNs60NFzC96GmcdfoRX6tC-jtkguwnmD48SPyXXmUC3hASLY5Pa8lV4tnVnMsSXpAJOh00Xq_vOVuCYU23IMox2JZ6AodClo-pr1OXtK4T-kWt8F-3v6D6ebrBPNZ34nCC1HKY1fBe4xKFayw7WR4i1Tc3EBqEp5S00SNx-8ziSxZVb--oLS8Y7WAu1kqfRVMedNJ41i4Gl4VIQ',
   projectsCard: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAitsO7z3Mfz_L7sCj7txkoV1HI2eI9YhEuCGlGj7NGV_gtRIItrwPpzzXjxTPnSBPQnabGzhH61Ml2tUzsDS42GfkUhGsWcPL3nRuecTAA55Z6ZguMoIaC0SkQ-ezUkrAsQXnMPzxWNagCZNciYnEn05QJF-Vchin0As6vS8Xn77WLfHvTiHEjG9AbMNVYhYEy9VnsbbTunI5GxqQ2-57jRvW80OVA9y1vfvYyJn3jeoW8PVcqewCetQ',
-  educationalCard: './src/images/edu.jpeg',
-  pic_42: './src/images/pic_42.jpg',
-  monogram: './src/images/screen.png',
+  educationalCard: eduCard,
+  pic_42: pic42,
+  monogram: screenMonogram,
 };
 
 export const projectsData: Project[] = [
