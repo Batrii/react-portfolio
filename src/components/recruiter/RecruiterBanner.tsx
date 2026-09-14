@@ -19,10 +19,6 @@ export const RecruiterBanner: React.FC<RecruiterBannerProps> = ({ onOpenContact 
 
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
           <div className="flex flex-col gap-2 max-w-2xl">
-            <div className="inline-flex items-center gap-2 font-mono text-[11px] text-secondary uppercase tracking-wider">
-              <span className="w-2 h-2 rounded-full bg-secondary"></span>
-              <span>Looking for fresh engineering talent?</span>
-            </div>
             <h3 className="font-headline text-2xl md:text-[28px] font-semibold text-on-surface leading-snug">
               Let’s build scalable and delightful web products together.
             </h3>
