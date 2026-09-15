@@ -3,6 +3,7 @@ import { PageId } from '../../types';
 import { images } from '../../data/portfolioData';
 import { Terminal, Share2 } from 'lucide-react';
 import './footer.css';
+import { developerProfile } from '@/data/portfolioData';
 
 interface FooterProps {
   onNavigate: (page: PageId) => void;
@@ -80,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenContact }) => 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-outline-variant/20">
           <div className="flex items-center gap-5">
             <a
-              href="https://github.com"
+              href={developerProfile.github}
               target="_blank"
               rel="noreferrer"
               className="font-mono text-[11px] text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5 footer-social-link"
@@ -89,7 +90,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenContact }) => 
               <span>GitHub</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href={developerProfile.linkedin}
               target="_blank"
               rel="noreferrer"
               className="font-mono text-[11px] text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5 footer-social-link"
@@ -100,7 +101,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenContact }) => 
           </div>
 
           <span className="font-mono text-[11px] text-outline">
-            © 2024 Badr Eddine Nafiai. All rights reserved.
+            © 2026 Badr Eddine Nafiai. All rights reserved.
           </span>
         </div>
       </div>
